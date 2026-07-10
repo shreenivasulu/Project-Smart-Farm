@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Farm</title>
-    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="services_smart_farm.css">
     <link rel="icon" href="smart_farm.png">
-    <script src="index.js"></script>
+    <script src="services_smart_farm.js"></script>
 
 </head>
 <body>
@@ -29,84 +29,95 @@
             <a href="about_smart_farm.html" action="about_smart_farm.html" method="get">About</a>
         </nav>
     </header>
-    
-
-    <section class="hero_content">
+    <!-- services -->
+    <section class="services" id="service">
+        <h2>Our Premium Services</h2>
+        <p class="section-text">
+        Smart Farm offers complete farm-to-consumer solutions designed
+        for farmers and customers.
+    </p>
+    <div class="service-container">
+        <div class="service-card">
+            <div class="icon">🚜</div>
+            <h3>Direct Farmer Marketplace</h3>
+            <p>Farmers sell products directly to consumers without middlemen.</p>
+        </div>
         
-        <div class="hero-container">
-            <h1>Fresh Products Direct From Farmers</h1>
-            <p>
-                Buy fresh vegetables and fruits directly from local farmers without middlemen.
-            </p>
+        <div class="service-card">
+            <div class="icon">🥬</div>
+            <h3>Fresh Organic Products</h3>
+            <p>Fresh vegetables, fruits, grains and dairy products delivered daily.</p>
         </div>
+
+        <div class="service-card">
+            <div class="icon">🚚</div>
+            <h3>Doorstep Delivery</h3>
+            <p>Fast and reliable delivery while preserving freshness and quality.</p>
+        </div>
+
+        <div class="service-card">
+            <div class="icon">💳</div>
+            <h3>Secure Payments</h3>
+            <p>Safe digital payment methods with transparent pricing.</p>
+        </div>
+
+        <div class="service-card">
+         <div class="icon">📱</div>
+            <h3>Smart Online Ordering</h3>
+            <p>Easy ordering with real-time updates and order tracking.</p>
+        </div>
+
+        <div class="service-card">
+            <div class="icon">🌾</div>
+            <h3>Farmer Empowerment</h3>
+            <p>Helping farmers increase profits through direct selling.</p>
+        </div>
+    </div>
     </section>
 
+<!-- process -->
+<section class="process">
+    <h2>How Smart Farm Works</h2>
+    <div class="process-container">
 
-    <section class="about">
-        <h2>About Our Platform</h2>
-        🌱 Smart farming empowers farmers with modern technology to cultivate efficiently and sustainably.<br><br>
-        🍎 Customers enjoy fresh, high‑quality produce delivered at fair and affordable prices.<br><br>              
-        🌾 It bridges the gap between rural producers and urban consumers through direct digital connections.<br><br>
-        🌍 Together, this platform fosters healthier communities and a more resilient food ecosystem.<br><br>       
-        🚜 Farmers gain better income opportunities by eliminating middlemen and reaching wider markets.<br><br>
+        <div class="step">
+            <span>1</span>
+            <h3>Farmers Register</h3>
+            <p>Verified farmers register and upload their fresh products.</p>
+        </div>
 
-    </section>
+        <div class="step">
+            <span>2</span>
+            <h3>Customers Order</h3>
+            <p>Customers browse and place orders directly.</p>
+        </div>
+
+        <div class="step">
+            <span>3</span>
+            <h3>Quality Check</h3>
+            <p>Every product is carefully inspected before dispatch.</p>
+        </div>
+
+        <div class="step">
+            <span>4</span>
+            <h3>Fast Delivery</h3>
+            <p>Products are delivered fresh to customers.</p>
+        </div>
+
+    </div>
+</section>
     
-    
-    <section class="products">
-        <h2>Featured Products</h2>
-        <div class="product-container">
-            <a href="product_smart_farm.html" class="product-link">
-                ..
-            </a>
-            <a href="product_smart_farm.html" class="product-link">
-                <div class="card">
-                    <h3>🥔 Potato</h3>
-                    <p>Fresh Farm Potato</p>
-                    <p>₹25 / kg</p>
-                    <button>Add to Cart</button>
-                </div>
-            </a>
-            <a href="product_smart_farm.html" class="product-link">
-                <div class="card">
-                    <h3>🥭 Mango</h3>
-                    <p>Sweet Mango</p>
-                    <p>₹80 / kg</p>
-                    <button>Add to Cart</button>
-                </div>
-            </a>
-        </div>
-    </section>
+<!-- Action product page -->
+    <section class="product">
+    <h2>
+        Join the Smart Farming Revolution
+    </h2>
+    <p>Experience healthier food, fair pricing, and a smarter agricultural marketplace.</p>
+    <a href="product_smart_farm.html" action="product_smart_farm.html" method="get" class="product-button">Shop Now</a>
+</section>
 
-
-    <section class="features">
-        <h2>Why Choose Us?</h2>
-        <div class="feature-box">
-            <a href="product_smart_farm.html" class="product-link">
-                <div>
-                    <h3>🌱 Fresh Products</h3>
-                    <p>Directly from <br>farmers.</p>
-                </div>
-            </a>
-
-            <a class="product-link">
-                <div>
-                    <h3>🚚 Fast Delivery</h3>
-                    <p>Quick delivery to your doorstep.</p>
-                </div>
-            </a>
-
-            <a class="product-link">
-                <div>
-                    <h3>💳 Secure Payment</h3>
-                    <p>Safe online payment options.</p>
-                </div>
-            </a>
-
-        </div>
-    </section>
-
-    <footer class="footer">
+<!-- Footer -->
+     <footer class="footer">
             <!-- Back To Top -->
         <div class="back-top">
             <a href="#">Back to Top</a>
@@ -162,7 +173,7 @@
                     <option>🇮🇳 ಕನ್ನಡ (Kannada)</option>
                     <option>🇮🇳 മലയാളം (Malayalam)</option>
                 </select>
-                <button class="country-btn">
+                <button class="country-button">
                     <img src="indian_flag.jpg" alt="India Flag">
                     <span>India</span>
                 </button>
