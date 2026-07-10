@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100vh;
+    background:#e8f5e9;
+    /* background: #f4f4f4; */
+}
+.login-box{    
+    width: 400px;
+    height: 415px;
+    padding: 40px;
+    top: 50%;
+    left: 50%;
+    background:#e8f5e0;
+    /* background: #fff; */
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 15px 25px rgba(0,0,0,.5);
+    border-radius: 15px;    
+}
+.login-box:target{
+    display: none;
+/* }
+.login_box:target ~ .login-box{
+    display: block; */
+}
+.login-box:target{
+    display: block;
+}
+.login-box h2{
+    color: #2e7d32;
+    text-align: center;
+    font-size: 38px;
+}
+.login-box h3{
+    text-align: left;
+    font-size: 15px;
+    margin: 20px 0px 10px 30px;
+}
+.login-box input[type="text"], .login-box input[type="password"]{
+    border: none;
+    background: cover;
+    display: block;
+    margin: 5px 0px 12px 30px;
+    text-align: left;
+    border: 1px solid #2e7d32;
+    padding: 10px 10px;
+    width: 75%;
+    outline: none;
+    color: #2e7d32;
+    border-radius: 11px;
+    transition: 0.25s;
+}
+.login-box input[type="text"]:focus, .login-box input[type="password"]:focus{
+    width: 80%;
+    border-color: #2e7d32;
+    border: 2px solid #2e7d32;
+}
+.login-box input[type="checkbox"]{
+    margin: 0px 0px 0px 32px;
+}
+.login-box button{
+    border: none;
+    background: #2e7d32;
+    display: block;
+    margin: 16px 0px 0px 30px;
+    text-align: center;
+    border: 2px solid #2e7d32;
+    padding: 10px 10px;
+    width: 75%;
+    outline: none;
+    color: #fff;
+    border-radius: 11px;
+    transition: 0.25s;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 15px;
+}
+.login-box button:hover{
+    background: #fff;
+    color: #2e7d32;
+}
+.login-box a, .login-box p{
+    text-decoration: none;
+    font-size: 16px;
+    color: #2e7d32;
+}
+.login-box a:hover{
+    color: #c40d13;
+}
+.login-box p{
+    color: black;
+    margin: 10px 0px 0px 0px;
+}
+.close{    
+    top: 20px;
+    right: 30px;
+    font-size: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    position: absolute;
+    color: #2e7d32;
+}
+.close:hover{
+    color: #c40d13;
+}
