@@ -135,7 +135,7 @@ nav a:hover::after{
     width:min(900px,90%);
 }
 
-.hero-content h1{
+.hero-content h2{
     font-size:58px;
     margin-bottom:20px;
     animation:fadeUp .8s ease;
@@ -149,10 +149,10 @@ nav a:hover::after{
 /*================ CONTACT SECTION =================*/
 
 .contact{
-    padding:90px 8%;
+    padding:15px 3%;
     display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:60px;
+    grid-template-columns:35% 65%;
+    gap:20px;
     align-items:start;
 }
 
@@ -161,22 +161,25 @@ nav a:hover::after{
 .contact-info h2{
     font-size:38px;
     color:#1B5E20;
-    margin-bottom:35px;
+    margin-bottom:20px;
 }
 
 /*================ INFO GRID =================*/
 
 .info-box{
     display:grid;
-    gap:25px;
+    /* padding: 100px; */
+    /* gap:25px; */
 }
 
 /*================ INFO CARD =================*/
 
 .info{
+    width: 100%;
+    height: auto;
     background:#fff;
     border-radius:18px;
-    padding:28px;
+    padding:25px;
     box-shadow:0 12px 25px rgba(0,0,0,.08);
     transition:.4s;
     border-left:6px solid #43A047;
@@ -189,37 +192,40 @@ nav a:hover::after{
 
 .info h3{
     color:#2E7D32;
-    margin-bottom:12px;
+    /* margin-bottom:12px; */
     font-size:23px;
 }
 
 .info p{
+    padding-left: 35px;
     color:#555;
     font-size:16px;
-    line-height:1.8;
+    /* line-height:1.8; */
 }
 
 /*================ CONTACT FORM =================*/
 
 .contact-form{
     background:#fff;
-    padding:45px;
+    /* padding:20px; */
     border-radius:22px;
     box-shadow:0 12px 30px rgba(0,0,0,.08);
 }
 
 .contact-form h2{
+    padding: 10px 25px 0px 25px;
     color:#1B5E20;
     font-size:36px;
-    margin-bottom:30px;
+    margin-bottom:20px;
 }
 
 /*================ FORM =================*/
 
 .contact-form form{
+    padding: 0px 25px 25px 25px;
     display:flex;
     flex-direction:column;
-    gap:20px;
+    gap:10px;
 }
 
 /*================ INPUT =================*/
@@ -227,7 +233,7 @@ nav a:hover::after{
 .contact-form input,
 .contact-form textarea{
     width:100%;
-    padding:16px 20px;
+    padding:10px 10px;
     border:1px solid #d8d8d8;
     border-radius:10px;
     font-size:16px;
@@ -238,7 +244,7 @@ nav a:hover::after{
 
 .contact-form textarea{
     resize:none;
-    min-height:170px;
+    min-height:150px;
 }
 
 /*================ FOCUS =================*/
@@ -273,7 +279,7 @@ nav a:hover::after{
 
 .branch{
     width:100%;
-    padding:90px 3%;
+    padding:40px 3%;
     background:linear-gradient(135deg,#edf8ee,#ffffff);
 }
 
@@ -285,7 +291,7 @@ nav a:hover::after{
     text-align:center;
     font-size:42px;
     color:#1B5E20;
-    margin-bottom:60px;
+    margin-bottom:50px;
     position:relative;
 }
 
@@ -312,7 +318,7 @@ nav a:hover::after{
 .branch-card{
     background:#ffffff;
     border-radius:20px;
-    padding:30px;
+    padding:10px;
     text-align:center;
     box-shadow:0 10px 25px rgba(0,0,0,.08);
     transition:.4s;
@@ -367,7 +373,7 @@ nav a:hover::after{
 /*================ BUSINESS HOURS =================*/
 
 .hours{
-    padding:90px 8%;
+    padding:30px 3%;
     background:#F7FBF5;
 }
 
@@ -375,14 +381,14 @@ nav a:hover::after{
     text-align:center;
     font-size:40px;
     color:#1B5E20;
-    margin-bottom:45px;
+    margin-bottom:25px;
 }
 
 .hours-box{
     max-width:750px;
     margin:auto;
     background:#fff;
-    padding:40px;
+    padding:30px;
     border-radius:20px;
     box-shadow:0 12px 28px rgba(0,0,0,.08);
 }
@@ -391,9 +397,9 @@ nav a:hover::after{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:18px 0;
+    padding:15px 0;
     border-bottom:1px solid #ddd;
-    font-size:18px;
+    font-size:16px;
 }
 
 .hours-box div:last-child{
@@ -408,7 +414,7 @@ nav a:hover::after{
 /*================ FAQ =================*/
 
 .faq{
-    padding:90px 8%;
+    padding:40px 3%;
     background:#ffffff;
 }
 
@@ -416,7 +422,7 @@ nav a:hover::after{
     text-align:center;
     color:#1B5E20;
     font-size:40px;
-    margin-bottom:50px;
+    margin-bottom:30px;
 }
 
 /*================ FAQ GRID =================*/
@@ -424,7 +430,7 @@ nav a:hover::after{
 .faq-container{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-    gap:30px;
+    gap:15px;
 }
 
 /*================ FAQ CARD =================*/
@@ -432,7 +438,7 @@ nav a:hover::after{
 .faq-card{
     background:#fff;
     border-radius:18px;
-    padding:35px;
+    padding:25px;
     box-shadow:0 10px 25px rgba(0,0,0,.08);
     transition:.4s;
 }
@@ -458,7 +464,7 @@ nav a:hover::after{
 
 .map{
     width:100%;
-    padding:90px 8%;
+    padding:35px 3%;
     background:#edf8ee;
 }
 
@@ -622,7 +628,8 @@ nav a:hover::after{
 }
 
 
-@media screen and (min-width:460px) and (max-width:768px){
+/*           Mobile           */
+@media screen and (min-width:360px) and (max-width:800px){
 
 header{
     width:100%;
@@ -630,8 +637,8 @@ header{
     flex-direction:column;
     justify-content:center;
     align-items:center;
-    padding:18px 20px;
-    gap:18px;
+    padding:13px 0px;
+    gap:10px;
 }
 
 .title{
@@ -642,13 +649,14 @@ header{
 }
 
 .logo-container img{
-    width:50px;
-    height:50px;
+    width:40px;
+    height:40px;
 }
 
 .title h2{
     font-size:28px;
     text-align:center;
+    color: whitesmoke;
 }
 
 nav{
@@ -657,92 +665,87 @@ nav{
     justify-content:center;
     align-items:center;
     flex-wrap:wrap;
-    gap:13px;
+    gap: 0em;
 }
 
 nav a{
     font-size:17px;
-    padding:8px 8px;
+    padding:8px 6px;
     text-decoration:none;
 }
 
 .hero{
-    height:40vh;
+    height: 25vh;
+    padding:2px;
 }
-
-.hero-content h1{
-    font-size:28px;
+.hero-content h2{
+    font-size:23px;
 }
-
 .hero-content p{
-    font-size:15px;
+    font-size:13px;
+    padding: 0px 8px;
 }
-
 .contact{
-    padding:50px 15px;
-}
-
-.contact-info h2,
-.contact-form h2,
-.branch-info h2,
-.hours h2,
-.faq h2,
-.map h2{
-    font-size:26px;
+    grid-template-columns:1fr;
+    gap:20px;
+    padding:20px;
 }
 
 .info{
-    padding:20px;
-}
-
-.branch-card{
-    padding:20px;
-}
-
-.branch-card h3{
-    font-size:19px;
-}
-
-.hours-box{
-    padding:20px;
-}
-
-.hours-box div{
-    font-size:15px;
+    width:100%;
+    height:auto;
 }
 
 .contact-form{
-    padding:20px;
+    width:100%;
+}
+.contact h2{
+    font-size:23px;
+}
+.contact h3{
+    font-size:13px;
+}
+.contact p{
+    font-size:10px;
 }
 
-.contact-form input,
-.contact-form textarea{
-    font-size:14px;
-}
 
-.contact-form button{
-    font-size:15px;
-    padding:14px;
-}
 
-.map iframe{
-    height:260px;
+/* section .card h3{
+    font-size: 16px;
+    padding: 0px 3px;
 }
+section .card p{
+    font-size: 13px;
+} */
 
-.footer-column h3{
-    font-size:18px;
+.footer-top{
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
 }
-
-.footer-column a{
-    font-size:14px;
+.footer-column{
+    width:100%;
 }
-
-.footer-bottom{
-    padding:30px 20px;
+.footer-column a:hover{
+    padding-left:0;
 }
-
-.copyright{
-    font-size:14px;
+.footer-middle{
+    flex-direction:column;
+    gap:18px;
+}
+.language-select,
+.country-btn{
+    width:100px;
+}
+.footer-links{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    /* gap:15px; */
+}
+.footer-links a{
+    margin:0;
 }
 
 }

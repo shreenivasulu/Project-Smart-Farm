@@ -60,53 +60,16 @@ nav a:hover{
     color: #FFD54F;
 }
 
-/* Header */
-/* header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 8px 1.5%;
-    background:#e8f5e1;
-    background: #ffffff;
-    box-shadow:0 4px 12px rgba(0,0,0,0.08);
-    position:sticky;
-    top: 0;
-    z-index: 1000;
-}
-.logo-container img{
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-}
-header h2{
-    margin: 0px 0px 0px 270px;
-    color: #1b5e20;
-    font-size:30px;
-    font-weight:700;
-}
-
-nav a{
-    color: #2e7d32;
-    text-decoration: none;
-    margin: 0px 8px;
-    font-size: 18px;
-    font-weight: bold; 
-}
-nav a:hover{
-    color:  #1c04f7;
-} */
-
-
 /* Selection */
 section{
-    padding:22px 8%;
+    padding:20px 3%;
 }
 
 section h2{
     text-align:center;
     font-size:42px;
     color:#1B5E20;
-    margin:0px 0px 40px 0px;
+    margin:0px 0px 30px 0px;
 }
 
 .section-text{
@@ -116,20 +79,20 @@ section h2{
     color:#666;
     font-size:18px;
     line-height:1.8;
-    margin-bottom:40px;
+    margin-bottom:30px;
 }
 
 /* Services */
 .service-container{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-    gap:90px;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
 }
 
 .service-card{
     background:#ffffff;
     border-radius:20px;
-    padding:40px 30px;
+    padding:20px 20px;
     text-align:center;
     transition:.3s;
     box-shadow:0 10px 30px rgba(122, 163, 89, 0.08);
@@ -174,7 +137,7 @@ section h2{
 .process-container{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-    gap:30px;
+    gap:20px;
 }
 
 .step{
@@ -222,12 +185,12 @@ section h2{
     color:#ffffff;
     border-radius:20px;
     /* margin:80px; */
-    margin: 30px 80px 30px 80px;
+    margin: 15px 10px 15px 10px;
 }
 
 .product h2{
     color:#ffffff;
-    margin-bottom:25px;
+    margin-bottom:20px;
 }
 
 .product p{
@@ -235,7 +198,7 @@ section h2{
     max-width:850px;
     margin:auto;
     line-height:1.8;
-    margin-bottom:35px;
+    margin-bottom:40px;
 }
 
 .product-button{
@@ -243,7 +206,7 @@ section h2{
     text-decoration:none;
     background:#ffffff;
     color:#2E7D32;
-    padding:18px 45px;
+    padding:18px 40px;
     border-radius:40px;
     font-size:18px;
     font-weight:bold;
@@ -394,8 +357,8 @@ section h2{
     line-height:1.8;
 }
 
-/*      Mobile          */
-@media screen and (min-width:460px) and (max-width:768px){
+/*           Mobile           */
+@media screen and (min-width:360px) and (max-width:800px){
 
 header{
     width:100%;
@@ -403,8 +366,8 @@ header{
     flex-direction:column;
     justify-content:center;
     align-items:center;
-    padding:18px 20px;
-    gap:18px;
+    padding:13px 0px;
+    gap:10px;
 }
 
 .title{
@@ -415,13 +378,14 @@ header{
 }
 
 .logo-container img{
-    width:50px;
-    height:50px;
+    width:40px;
+    height:40px;
 }
 
 .title h2{
-    font-size:28px;
+    font-size:32px;
     text-align:center;
+    color: whitesmoke;
 }
 
 nav{
@@ -430,130 +394,68 @@ nav{
     justify-content:center;
     align-items:center;
     flex-wrap:wrap;
-    gap:13px;
+    gap: 0em;
 }
 
 nav a{
     font-size:17px;
-    padding:8px 8px;
+    padding:8px 6px;
     text-decoration:none;
 }
 
-
-/* Common Sections */
-section{
-    padding:40px 20px;
+.hero{
+    height: 25vh;
+    padding:2px;
 }
-section h2{
-    font-size:30px;
-    margin-bottom:25px;
+.hero-content h1{
+    font-size:23px;
 }
-.section-text{
-    font-size:16px;
-    line-height:1.7;
+.hero-content p{
+    font-size:13px;
+    padding: 0px 8px;
 }
 
-/* Services */
-.service-container{
-    grid-template-columns:1fr;
-    gap:25px;
+.services,.product,.process{
+    padding:16px 16px;
 }
-.service-card{
-    padding:30px 20px;
+.services h2{
+    font-size:23px;
 }
-.icon{
-    width:70px;
-    height:70px;
-    font-size:40px;
-}
-.service-card h3{
-    font-size:22px;
-}
-.service-card p{
+.services h3{
     font-size:16px;
 }
-
-/* Process */
-.process-container{
-    grid-template-columns:1fr;
-}
-.step{
-    padding:30px 20px;
-}
-.step span{
-    width:60px;
-    height:60px;
-    font-size:26px;
+.services p{
+    font-size:13px;
 }
 
 
-.product{
-    margin:20px;
-    border-radius:15px;
-    padding:35px 20px;
-}
-.product h2{
-    font-size:28px;
-}
-.product p{
-    font-size:17px;
-}
-.product-button{
-    padding:14px 30px;
-    font-size:16px;
-}
-
-/* Footer */
 .footer-top{
     flex-direction:column;
     align-items:center;
     text-align:center;
-    gap:35px;
-    padding:40px 20px;
 }
 .footer-column{
-    min-width:100%;
-}
-.footer-column h3{
-    font-size:20px;
-}
-.footer-column a{
-    font-size:15px;
+    width:100%;
 }
 .footer-column a:hover{
     padding-left:0;
 }
 .footer-middle{
     flex-direction:column;
-    gap:20px;
-}
-.footer-logo{
-    width:50px;
-    height:50px;
-}
-.footer-buttons{
-    flex-direction:column;
-    width:100%;
+    gap:18px;
 }
 .language-select,
-.country-button{
-    width:220px;
-}
-.footer-bottom{
-    padding:30px 15px;
+.country-btn{
+    width:100px;
 }
 .footer-links{
     display:flex;
-    flex-direction:column;
-    gap:12px;
-    margin-top:0;
+    flex-wrap:wrap;
+    justify-content:center;
+    /* gap:15px; */
 }
 .footer-links a{
     margin:0;
-}
-.copyright{
-    font-size:14px;
-    margin-top:15px;
 }
 
 }

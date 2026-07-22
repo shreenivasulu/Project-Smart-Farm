@@ -193,8 +193,8 @@ section h2{
     text-align: right;
     border: none;
     outline: none;
-    padding: 20px 30px;
-    font-size: 17px;
+    padding: 20px 20px;
+    font-size: 18px;
     background: transparent;
 }
 
@@ -205,6 +205,7 @@ section h2{
 .search-box button {
     border: none;
     padding: 20px 10px;
+    margin-left: 20px;
     background: #43A047;
     color: #fff;
     cursor: pointer;
@@ -221,7 +222,7 @@ section h2{
 .category-container{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
-    gap: 50px;
+    gap: 20px;
 }
 .category-card{
     background-color: white;
@@ -260,11 +261,16 @@ section h2{
     font-size:20px;
 }
 
-/*     featured product      */
-.featured-products,.vegetables,.fruits,.leaf_vegetables,
-.flowers,.dairy_products,.leaf_powder,.grains_seeds {
-    text-align: center;
-    padding: 60px 20px;
+.featured-products,
+.vegetables,
+.fruits,
+.flowers,
+.dairy_products,
+.leaf_powder,
+.leaf_vegetables
+.grains_seeds{
+    text-align:center;
+    padding:30px 20px;
 }
 
 .featured-products h2 {
@@ -570,18 +576,17 @@ section h2{
 }
 
 
-
-/*     Mobile   Responsive   */
-@media screen and (min-width:460px) and (max-width:768px){
-
-/* Header */
+/*           Mobile           */
+@media screen and (min-width:360px) and (max-width:800px){
 
 header{
+    width:100%;
+    display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
-    padding:18px 20px;
-    gap:15px;
+    padding:13px 0px;
+    gap:10px;
 }
 
 .title{
@@ -592,158 +597,258 @@ header{
 }
 
 .logo-container img{
-    width:50px;
-    height:50px;
+    width:40px;
+    height:40px;
 }
 
 .title h2{
-    font-size:22px;
-    margin-bottom: 10px;
+    font-size:32px;
+    text-align:center;
+    color: whitesmoke;
 }
 
 nav{
+    width:100%;
     display:flex;
-    flex-wrap:wrap;
     justify-content:center;
     align-items:center;
-    gap:12px;
+    flex-wrap:wrap;
+    gap: 0em;
 }
-
 nav a{
     font-size:17px;
-    padding:9px 8px;
+    padding:8px 6px;
+    text-decoration:none;
 }
-
-/* Hero */
 
 .hero{
-    height:50vh;
-    padding:22px;
+    min-height:55vh;
+    height:auto;
+    padding:60px 20px;
 }
-
 .hero-content h1{
-    margin: 22px;
-    font-size:28px;
-    line-height:1.2;
+    font-size:30px;
 }
-
 .hero-content p{
     font-size:13px;
 }
-
-/* Sections */
-
-section{
-    padding:50px 25px;
+.search-section h2{
+    font-size: 28px;
+}
+.search-box{
+    display:flex;
+    flex-direction:column;
+    width:100%;
+    border-radius:20px;
+    overflow:hidden;
+    padding:15px;
+    gap:12px;
+}
+.search-box input,
+.search-box select,
+.search-box button{
+    width:100%;
+    padding:16px;
+    font-size:16px;
+    border-radius:10px;
+}
+.search-box select{
+    text-align:left;
+}
+.search-box button{
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 
-section h2{
+.categories h2{
+    font-size: 28px;
+}
+.categories p{
+    font-size: 13px;
+}
+.category-container{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+}
+.category-card{
+    padding:20px 10px;
+    border-radius:15px;
+}
+.category-icon{
+    width:70px;
+    height:70px;
+    font-size:40px;
+    margin-bottom:12px;
+}
+/*  */
+/*  */
+.category-card h3{
+    font-size:18px;
+    margin-bottom:8px;
+}
+.category-card p{
+    font-size:13px;
+    line-height:1.5;
+}
+/*  */
+/*  */
+.featured-products{
+    padding:0px 15px;
+}
+.featured-products h2{
     font-size:28px;
-    margin-bottom:28px;
-    text-align:center;
+    margin-bottom:15px;
+}
+.featured-products p{
+    font-size:13px;
+}
+/* headings */
+.vegetables h2{
+    font-size: 28px;
+}
+.fruits h2{
+    font-size: 28px;
+}
+.leaf_vegetables h2{
+    font-size: 28px;
+}
+.flowers h2{
+    font-size: 28px;
+}.dairy_products h2{
+    font-size: 28px;
+}
+.leaf_powder h2{
+    font-size: 28px;
+}
+.grains_seeds h2{
+    font-size: 28px;
 }
 
-section h3{
-    font-size:22px;
+/* pera */
+.section-text{
+    font-size:15px;
+    line-height:1.6;
+    margin-bottom:15px;
 }
 
-section p{
-    font-size:17px;
-    line-height:1.8;
-    text-align:justify;
-}
-
-/* Mission Cards */
-
-.cards{
+/* Two cards per row */
+.product-container{
     display:grid;
-    grid-template-columns:1fr;
-    gap:22px;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
 }
 
-/* Why Choose Us */
-
-.why-grid{
-    display:grid;
-    grid-template-columns:1fr;
-    gap:20px;
+/* Product Card */
+.product-card{
+    width:100%;
+    padding:10px;
+    border-radius:15px;
 }
 
-.why-card{
-    padding:22px;
+/* Product Image */
+.product-card img{
+    width:100%;
+    height:120px;
+    object-fit:cover;
+    border-radius:10px;
 }
 
-/* Vision */
+/* Product Name */
+.product-card h3{
+    font-size:20px;
+    margin:8px 0;
+}
 
-.vision p{
+/* Farmer, Location, Rating */
+.farmer,
+.location,
+.rating,
+.stock,
+.delivery{
+    font-size:11px;
+    line-height:1.4;
+}
+
+/* Price */
+.new-price{
+    font-size:16px;
+}
+.old-price{
+    font-size:13px;
+}
+
+/* Discount & Organic */
+.badge,
+.organic{
+    font-size:9px;
+    padding:3px 5px;
+}
+
+/* Wishlist */
+.wishlist{
+    font-size:16px;
+    top:28px;
+    right:8px;
+}
+
+/* Quantity */
+.quantity{
+    justify-content:center;
+    gap:6px;
+    margin:10px 0;
+}
+.quantity button{
+    width:28px;
+    height:28px;
+    padding:0;
     font-size:18px;
 }
+.quantity span{
+    font-size:15px;
+}
 
-/* Footer */
+/* Buttons */
+.buttons{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+}
+.cart-button,
+.buy-button{
+    width:100%;
+    padding:8px;
+    font-size:13px;
+}
 
 .footer-top{
-    display:flex;
     flex-direction:column;
     align-items:center;
     text-align:center;
-    gap:35px;
-    padding:40px 20px;
 }
-
 .footer-column{
     width:100%;
 }
-
+.footer-column a:hover{
+    padding-left:0;
+}
 .footer-middle{
-    display:flex;
     flex-direction:column;
-    gap:20px;
+    gap:18px;
 }
-
-.footer-buttons{
-    display:flex;
-    flex-direction:column;
-    width:100%;
-    align-items:center;
-}
-
 .language-select,
 .country-btn{
-    width:240px;
+    width:100px;
 }
-
 .footer-links{
     display:flex;
-    flex-direction:column;
-    gap:12px;
+    flex-wrap:wrap;
+    justify-content:center;
+    /* gap:15px; */
 }
-
 .footer-links a{
     margin:0;
 }
 
-.footer-bottom{
-    padding:30px 20px;
 }
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

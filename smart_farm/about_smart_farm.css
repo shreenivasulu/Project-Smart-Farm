@@ -312,7 +312,7 @@ section p{
 }
 
 /*           Mobile           */
-@media screen and (min-width:460px) and (max-width:768px){
+@media screen and (min-width:360px) and (max-width:800px){
 
 header{
     width:100%;
@@ -320,8 +320,8 @@ header{
     flex-direction:column;
     justify-content:center;
     align-items:center;
-    padding:18px 20px;
-    gap:18px;
+    padding:13px 0px;
+    gap:10px;
 }
 
 .title{
@@ -332,13 +332,14 @@ header{
 }
 
 .logo-container img{
-    width:50px;
-    height:50px;
+    width:40px;
+    height:40px;
 }
 
 .title h2{
     font-size:28px;
     text-align:center;
+    color: whitesmoke;
 }
 
 nav{
@@ -347,52 +348,57 @@ nav{
     justify-content:center;
     align-items:center;
     flex-wrap:wrap;
-    gap:13px;
+    gap: 0em;
 }
 
 nav a{
     font-size:17px;
-    padding:8px 8px;
+    padding:8px 6px;
     text-decoration:none;
 }
 
 .hero{
-    height:45vh;
-    padding:20px;
+    height: 25vh;
+    padding:2px;
 }
 .hero-content h1{
-    font-size:40px;
+    font-size:23px;
 }
 .hero-content p{
-    font-size:18px;
+    font-size:13px;
+    padding: 0px 8px;
 }
 
 section{
-    padding:45px 7%;
+    padding:16px 16px;
 }
 section h2{
-    font-size:32px;
+    font-size:23px;
 }
 section h3{
-    font-size:22px;
+    font-size:13px;
 }
 section p{
-    font-size:17px;
+    font-size:13px;
 }
-.cards{
-    display:grid;
-    grid-template-columns:1fr;
-    gap:20px;
+section .card h3{
+    font-size: 16px;
+    padding: 0px 3px;
 }
-.why-grid{
-    grid-template-columns:1fr;
+section .card p{
+    font-size: 13px;
+}
+
+.vision p{
+    font-size: 13px;
+    text-align: justify;
+    padding: 0px 2px;
 }
 
 .footer-top{
     flex-direction:column;
     align-items:center;
     text-align:center;
-    gap:35px;
 }
 .footer-column{
     width:100%;
@@ -404,19 +410,15 @@ section p{
     flex-direction:column;
     gap:18px;
 }
-.footer-buttons{
-    flex-direction:column;
-    width:100%;
-}
 .language-select,
 .country-btn{
-    width:220px;
+    width:100px;
 }
 .footer-links{
     display:flex;
     flex-wrap:wrap;
     justify-content:center;
-    gap:15px;
+    /* gap:15px; */
 }
 .footer-links a{
     margin:0;
