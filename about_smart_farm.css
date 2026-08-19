@@ -60,32 +60,65 @@ nav a:hover{
     color: #FFD54F;
 }
 
-/* Hero section */
+
+
+
+
+
+
+
+
 .hero{
-    width: 100%;
-    height: 60vh;
-    background:
-        linear-gradient(rgba(0,0,0,.10),rgba(0,0,0,.25)),
-        url("../accerts/images/farming/farming_automobile.avif");
-    background-size:cover;
-    background-position:center;
-    display:flex;
-    justify-content:center;
-    /* align-items:center; */
-    text-align:center;
-    color:white;
-    
+  width: 100%;
+    min-height: 60vh;
+    background: linear-gradient(rgba(0,0,0,.10), rgba(0,0,0,.25)),
+                url("../accerts/images/farming/farming_automobile.avif");
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 50px;
+    padding: 40px 6%;
+
+    text-align: center;
+    color: white;
 }
-.hero-content h1{
-    font-size:60px;
-    /* margin-bottom:20px; */
+
+/* Video - Left Side */
+.hero video {
+    width: 60%;
+    max-width: 700px;
+    height: 400px;
+    object-fit: cover;
+
+    border: 1.5px solid #4CAF50;
+    border-radius: 35px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
-.hero-content p{
+
+/* Content - Right Side */
+.hero-content {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
     color: whitesmoke;
-    /* color:#1B5E20; */
-    font-size:24px;
-    max-width:700px;
-    /* margin:auto; */
+    font-size: 24px;
+    max-width: 700px;
+    line-height: 1.6;
 }
 
 /* Our Mission */
@@ -356,6 +389,20 @@ nav a{
     padding:8px 6px;
     text-decoration:none;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .hero{
     height: 25vh;
